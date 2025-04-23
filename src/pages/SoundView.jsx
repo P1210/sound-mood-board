@@ -1,5 +1,5 @@
 import React from "react";
-import CardCarousel from "../components/cardCarousel";
+import CardCarousel from "../components/CardCarousel";
 
 function SoundView() {
   return (
