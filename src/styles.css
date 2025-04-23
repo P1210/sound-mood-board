@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(#0f172a, #020617);
+}
+
+#root {
+  /* background: radial-gradient(circle at 10% 20%, #0f172a 0%, #020617 100%); */
+  /* background: linear-gradient(hsl(222, 47%, 0%),hsl(222, 47%, 40%), hsl(229, 84%, 5%)); */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 0;
+  height: 0;
+  background: transparent;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 0;
+  height: 0;
+  background: transparent;
+}
+
+@theme {
+  --font-display: "Inter", "sans-serif";
+}
