@@ -25,7 +25,7 @@ function CardCarousel() {
             }}
           >
             <div
-              className="h-32 w-full rounded-t-xl relative bg-cover bg-center flex flex-col justify-end"
+              className="h-36 sm:h-32 w-full rounded-t-xl relative bg-cover bg-center flex flex-col justify-end"
               style={{ backgroundImage: `url(${sound.backgroundImage})` }}
             >
               <div className="h-full w-full absolute inset-0 rounded-t-xl bg-gradient-to-b from-black/10 via-black/30 to-black/70"></div>

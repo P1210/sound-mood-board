@@ -1,4 +1,5 @@
 import FocusTimer from "./components/FocusTimer";
+import Footer from "./components/Footer";
 import SoundView from "./pages/SoundView";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <FocusTimer />
       </div>
       <SoundView />
+      <Footer/>
     </div>
   );
 }
