@@ -20,7 +20,7 @@ function App() {
           <div className="h-0.5 w-24 bg-gradient-to-l from-indigo-500 to-transparent ml-4"></div>
         </div> */}
       </header>
-      <div className="w-full px-16 mb-4 grid grid-cols-2">
+      <div className="w-full px-8 sm:px-16 mb-4 grid grid-cols-2">
         <FocusTimer />
       </div>
       <SoundView />
