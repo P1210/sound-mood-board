@@ -90,3 +90,81 @@ export const focusTimerSettings = [
     name: "Long Break",
   },
 ];
+
+export const soundPresets = [
+  {
+    key: "deep_focus_boost",
+    name: "Deep Focus Boost",
+    subName: "Boost concentration with calming sounds",
+    sounds: [
+      { key: "rain", volume: 0.6 },
+      { key: "soft_piano", volume: 0.5 },
+      { key: "wind", volume: 0.3 },
+    ],
+  },
+  {
+    key: "tropical_daydream",
+    name: "Tropical Daydream",
+    subName: "Spark creativity and lighten your mood",
+    sounds: [
+      { key: "beach", volume: 0.7 },
+      { key: "ocean_waves", volume: 0.5 },
+    ],
+  },
+  {
+    key: "calm_evening_wind_down",
+    name: "Calm Evening",
+    subName: "Unwind and relax after a long day",
+    sounds: [
+      { key: "fireplace", volume: 0.6 },
+      { key: "night", volume: 0.5 },
+      { key: "soft_piano", volume: 0.3 },
+    ],
+  },
+  {
+    key: "meditation_retreat",
+    name: "Meditation Retreat",
+    subName: "Find inner peace and stillness",
+    sounds: [
+      { key: "ocean_waves", volume: 0.5 },
+      { key: "wind", volume: 0.4 },
+    ],
+  },
+  {
+    key: "cozy_winter_study",
+    name: "Cozy Winter Study",
+    subName: "Create a warm, focused study space",
+    sounds: [
+      { key: "rain", volume: 0.5 },
+      { key: "fireplace", volume: 0.6 },
+      { key: "soft_piano", volume: 0.4 },
+    ],
+  },
+  {
+    key: "forest_therapy",
+    name: "Forest Therapy",
+    subName: "Reduce stress and feel grounded",
+    sounds: [
+      { key: "wind", volume: 0.7 },
+      { key: "night", volume: 0.5 },
+    ],
+  },
+  {
+    key: "creative_spark",
+    name: "Creative Spark",
+    subName: "Fuel imagination and free thinking",
+    sounds: [
+      { key: "soft_piano", volume: 0.6 },
+      { key: "beach", volume: 0.4 },
+    ],
+  },
+  {
+    key: "sleep_preparation_mode",
+    name: "Sleep Prep Mode",
+    subName: "Ease into deep, restful sleep",
+    sounds: [
+      { key: "night", volume: 0.6 },
+      { key: "ocean_waves", volume: 0.5 },
+    ],
+  },
+];
