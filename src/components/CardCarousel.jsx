@@ -1,18 +1,11 @@
-import React from "react";
-import { useAudioHook } from "../hooks/useAudioHook";
-import {
-  Pause,
-  PauseCircle,
-  Play,
-  PlayCircle,
-  Volume,
-  Volume2,
-  VolumeOff,
-} from "lucide-react";
+import React, { useContext } from "react";
+import { AudioContext } from "../hooks/useAudioHook";
+import { Pause, Play, Volume2, VolumeOff } from "lucide-react";
 import { soundColors } from "../colors";
 
 function CardCarousel() {
-  const { soundData, togglePlay, handleVolumne, handleMute } = useAudioHook();
+  const { soundData, togglePlay, handleVolumne, handleMute } =
+    useContext(AudioContext);
   return (
     <>
       <div className="grid [grid-template-columns:repeat(auto-fit,minmax(18rem,1fr))] gap-12 w-full mx-auto">

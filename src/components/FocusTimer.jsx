@@ -14,8 +14,6 @@ function FocusTimer() {
     isTimerActive,
     setTimerActive,
     formatTime,
-    sessions,
-    setSessions,
     handleTimerComplete,
   } = useFocusHook();
 
@@ -43,7 +41,7 @@ function FocusTimer() {
   }, [isTimerActive]);
 
   return (
-    <div className="col-span-2 bg-[rgba(25,33,52,0.7)] rounded-xl p-5">
+    <div className="col-span-1 bg-[rgba(25,33,52,0.7)] rounded-xl p-5">
       <h2 className="flex justify-center display-text text-xl font-medium text-gray-400">
         Focus Timer
       </h2>
