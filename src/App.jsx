@@ -1,3 +1,4 @@
+import FocusTimer from "./components/FocusTimer";
 import SoundView from "./pages/SoundView";
 
 function App() {
@@ -14,7 +15,14 @@ function App() {
         <p className="font-display text-center font-medium text-gray-500 text-sm">
           Immerse yourself in ambient soundscapes
         </p>
+        {/* <div className="flex items-center justify-center my-5">
+          <div className="h-0.5 w-24 bg-gradient-to-r from-indigo-500 to-transparent"></div>
+          <div className="h-0.5 w-24 bg-gradient-to-l from-indigo-500 to-transparent ml-4"></div>
+        </div> */}
       </header>
+      <div className="w-full px-16 mb-4 grid grid-cols-2">
+        <FocusTimer />
+      </div>
       <SoundView />
     </div>
   );

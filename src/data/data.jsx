@@ -72,3 +72,21 @@ export const soundTypes = [
     musicAttribute: "",
   },
 ];
+
+export const focusTimerSettings = [
+  {
+    key: "focus_mode",
+    defaultValue: 1500,
+    name: "Pomodoro",
+  },
+  {
+    key: "short_break",
+    defaultValue: 300,
+    name: "Short Break",
+  },
+  {
+    key: "long_break",
+    defaultValue: 900,
+    name: "Long Break",
+  },
+];
