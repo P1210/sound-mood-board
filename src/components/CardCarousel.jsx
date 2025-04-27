@@ -61,7 +61,7 @@ function CardCarousel() {
                     soundColors[sound.soundKey]
                   } ${sound.volume * 100}%, #2C2F3A ${sound.volume * 100}%)`,
                 }}
-                className={`w-full h-1 rounded-lg appearance-none cursor-pointer bg-[#2C2F3A] transition-all duration-200 hover:brightness-110 focus:outline-none`}
+                className={`w-full h-2.5 sm:h-1.5 rounded-lg appearance-none cursor-pointer bg-[#2C2F3A] transition-all duration-200 hover:brightness-110 focus:outline-none`}
               />
               <button
                 // className="rounded-full bg-[#232631] hover:bg-[#4F8EF7] transition-colors"
