@@ -42,7 +42,7 @@ function FocusTimer() {
 
   return (
     <div className="col-span-1 bg-[rgba(25,33,52,0.7)] rounded-xl p-5">
-      <h2 className="flex justify-center display-text text-xl font-medium text-gray-400">
+      <h2 className="flex justify-center display-text text-xl font-medium text-gray-200">
         Focus Timer
       </h2>
       <div className="text-gray-200 text-6xl font-regular text-center my-3">
@@ -64,7 +64,7 @@ function FocusTimer() {
           {isTimerActive ? "Pause" : "Start"}
         </button>
       </div>
-      <div className="flex justify-center gap-3 mt-4">
+      <div className="flex justify-center flex-wrap gap-3 mt-4">
         {focusTimerSettings.map((setting, idx) => {
           return (
             <button

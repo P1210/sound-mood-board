@@ -12,7 +12,7 @@ body {
   /* background: linear-gradient(hsl(222, 47%, 0%),hsl(222, 47%, 40%), hsl(229, 84%, 5%)); */
 }
 
-input[type="range"]::-webkit-slider-thumb {
+/* input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 0;
@@ -24,8 +24,8 @@ input[type="range"]::-moz-range-thumb {
   width: 1px;
   height: 1px;
   background: transparent;
-}
-
+} */
+ 
 @theme {
   --font-display: "Inter", "sans-serif";
 }

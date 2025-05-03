@@ -10,7 +10,7 @@ function SoundMixer() {
   } = useContext(AudioContext);
   return (
     <div className="col-span-1 sm:col-span-2 bg-[rgba(25,33,52,0.7)] rounded-xl pt-3 p-5">
-      <h2 className="flex justify-center display-text text-xl font-medium text-gray-400 mb-5">
+      <h2 className="flex justify-center display-text text-xl font-medium text-gray-100 mb-5">
         Soundscape Deck
       </h2>
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-5">
@@ -32,10 +32,16 @@ function SoundMixer() {
                 handleSelectPreset(preset.key);
               }}
             >
-              <h3 class="font-display font-bold text-md text-gray-300 pb-1">
+              <h3
+                style={{ color: preset.key === selectedPreset ? "white" : "" }}
+                className="font-display font-semibold text-md text-gray-300 pb-1"
+              >
                 {preset.name}
               </h3>
-              <p class="font-display font-regular text-xs text-gray-400">
+              <p
+                style={{ color: preset.key === selectedPreset ? "white" : "" }}
+                className="font-display font-light text-xs text-gray-400"
+              >
                 {preset.subName}
               </p>
             </div>
