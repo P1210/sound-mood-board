@@ -9,6 +9,11 @@ export function useFocusHook() {
   const [isTimerActive, setTimerActive] = useState(false);
   const [sessions, setSessions] = useState(0);
 
+  const alarm_sound =
+    import.meta.env.VITE_APP_ENVIRONMENT === "LOCAL"
+      ? alarmSound
+      : __ALARMSOUND__;
+
   const handleResetTimer = () => {
     setTimerActive(false);
     setTimerValue(
@@ -26,7 +31,7 @@ export function useFocusHook() {
 
   const handleTimerComplete = useCallback(() => {
     setTimerActive(false);
-    const audio = new Audio(alarmSound);
+    const audio = new Audio(alarm_sound);
     audio.play();
     audio.loop = false;
     const currentSetting = focusTimerSettings.find((s) => s.key === timerType);
